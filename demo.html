@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Edit : ?</title>
+    <style>
+li	{padding:5px;}
+.val	{min-width:200px;}
+input {min-width:200px; border:1px solid #eee; font-family:monospace;}
+.al   {list-style:none;}
+
+    
+    </style>
+  </head>
+  <body>
+  
+  <h2>Edit some info: (hint: try the tab, enter and delete keys)</h2>
+  <div class='editor' style = 'display:none;'></div>
+  
+  <a id="foobar" href = "#">See it as JSON:</a> 
+  <code id='out'></code>  
+  
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"></script>
+  <script src='./jquery.nestedEditor.js' ></script>
+  <script type='text/javascript'>
+  
+$(function(){
+	$('#foobar').click(function(){
+		$("#out").text($('.editor').nestedEditor('getJSON'));
+		return false;
+	});
+	//Init
+	$('.editor').nestedEditor().show();
+});  
+  
+  
+	</script>
+	</body>
+</html>    
