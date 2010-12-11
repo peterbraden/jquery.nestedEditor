@@ -11,4 +11,4 @@ A widget for the editing of hierarchical information in the form of nested lists
 
 
 
-demo at [http://peterbraden.github.com/jquery.nestedEditor/demo.html]
+demo at (http://peterbraden.github.com/jquery.nestedEditor/demo.html)
