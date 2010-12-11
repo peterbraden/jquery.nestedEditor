@@ -1,9 +1,14 @@
-
 /***************************
 === JQuery Nested Editor ===
 Author: Peter Braden <peterbraden@peterbraden.co.uk>
 
 A widget for the editing of hierarchical information in the form of nested lists
+
+$('#myId').nestedEditor()
+
+...
+
+$('#myId').nestedEditor('getJSON')
 
 ****************************/
 
